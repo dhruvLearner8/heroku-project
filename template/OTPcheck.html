@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">  -->
+    <title>Otp check</title>
+</head>
+<body>
+            
+    <form action="" method="POST">        
+        {% csrf_token %}
+        
+            <label >
+                enter your OTP from registered email id:
+            </label>
+            <input type="text"  name="otp" placeholder="otp" required>
+            <div><input type="submit" value="Check"></div>
+    </form>    
+</body>
+</html>
